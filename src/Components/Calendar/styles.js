@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const CalendarWrapper = styled.div`
-  margin-top: 150px;
+  margin-top: 100px;
+  margin-bottom: 100px;
   margin-left: auto;
   margin-right: auto;
   width: 359px;

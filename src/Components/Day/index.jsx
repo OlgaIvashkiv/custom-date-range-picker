@@ -27,7 +27,9 @@ const Day = ({ currentDate, date, startDate, endDate, onClick }) => {
     }
 
     return (
-        <DayWrapper onClick={() => { onClick(date) }} className={ className.join(' ') }>
+        <DayWrapper onClick={() => { 
+            console.log(date, 'click from DAY')
+            onClick(date) }} className={ className.join(' ') }>
             { date.date() }
         </DayWrapper>
     )
