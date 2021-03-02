@@ -8,7 +8,7 @@ const Heading = ({ date, changeMonth, resetDate }) => {
         <CalendarHeader>
             <HeaderButton onClick={ () => changeMonth(date.month() - 1) }>&#8249;</HeaderButton>
             <Header onClick={ () => resetDate() }> { date.format('MMMM') } { date.format('YYYY') }</Header>
-            <HeaderButton onClick={ () => changeMonth(date.month() + 1) }>&#8250;</HeaderButton>
+            <HeaderButton onClick={() => changeMonth(date.month() + 1) }>&#8250;</HeaderButton>
         </CalendarHeader>
     )
 };
